@@ -1,0 +1,193 @@
+@import './font.scss';
+@import '@/app.scss';
+@import '@/components/main.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  user-select: none;
+  text-wrap: balance;
+}
+
+html {
+  background: linear-gradient(180deg, rgb(243, 227, 255) 10%, rgb(255, 237, 246) 67%, rgb(232, 250, 255) 100%);
+  scroll-behavior: smooth;
+}
+
+:root {
+  --title: black;
+  --fade: #a1a1a1;
+  --wh: white;
+  --color: #b962cf;
+}
+
+.container {
+  max-width: 1660px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  margin: 0 auto;
+
+  @include media(1800) {
+    max-width: 1560px;
+  }
+
+  @include media(1600) {
+    max-width: 1360px;
+  }
+
+  @include media(1400) {
+    max-width: 1200px;
+  }
+
+  @include media(1230) {
+    max-width: 1080px;
+  }
+
+  @include media(1110) {
+    max-width: 920px;
+  }
+
+  @include media(950) {
+    max-width: 780px;
+    gap: 60px;
+  }
+
+  @include media(650) {
+    gap: 50px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 34px;
+  color: var(--title);
+
+  @include media(1230) {
+    font-size: 32px;
+  }
+
+  @include media(1110) {
+    font-size: 30px;
+  }
+
+  @include media(950) {
+    font-size: 27px;
+  }
+
+  @include media(730) {
+    font-size: 24px;
+  }
+
+  @include media(650) {
+    font-size: 23px;
+  }
+
+  @include media(530) {
+    font-size: 20px;
+  }
+}
+
+.starter {
+  font-weight: 500;
+  font-size: 24px;
+
+  @include media(1230) {
+    font-size: 22px;
+  }
+
+  @include media(1110) {
+    font-size: 20px;
+  }
+
+  @include media(920) {
+    font-size: 18px;
+  }
+}
+
+.text {
+  color: var(--title);
+  font-size: 17px;
+  line-height: 29px;
+  font-weight: 400;
+
+  @include media(1230) {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  @include media(1110) {
+    font-size: 15px;
+  }
+
+  @include media(850) {
+    font-size: 14px;
+  }
+}
+
+.purple {
+  color: var(--color);
+  font-size: 17px;
+  line-height: 29px;
+  font-weight: 500;
+
+  @include media(1230) {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  @include media(1110) {
+    font-size: 15px;
+  }
+
+  @include media(850) {
+    font-size: 14px;
+  }
+
+  @include media(650) {
+    font-size: 13px;
+  }
+
+  @include media(530) {
+    font-size: 12px;
+  }
+}
+
+.fade {
+  color: var(--fade);
+  font-size: 17px;
+  line-height: 29px;
+  font-weight: 400;
+
+  @include media(1230) {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  @include media(1110) {
+    font-size: 15px;
+  }
+
+  @include media(850) {
+    font-size: 14px;
+  }
+}
+
+.btn {
+  background-color: var(--color);
+  color: white;
+  line-height: 30px;
+  font-size: 22px;
+  border: none;
+  font-weight: 500;
+  border-radius: 10px;
+
+  @include media(1230) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
